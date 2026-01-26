@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #050505;
+  color: #f2f2f2;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: radial-gradient(circle, #7a0000, #000);
+}
+
+.glow {
+  font-size: 48px;
+  color: #ff1a1a;
+  text-shadow: 0 0 10px #ff1a1a, 0 0 20px #ff0000;
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  from { text-shadow: 0 0 10px #ff1a1a; }
+  to { text-shadow: 0 0 25px #ff0000; }
+}
+
+header p {
+  margin: 10px 0 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #ff1a1a;
+  color: #000;
+}
+
+button:hover {
+  background: #cc0000;
+}
+
+.discord {
+  background: #5865F2;
+  color: #fff;
+}
+
+.discord:hover {
+  background: #404eed;
+}
+
+main {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: #0e0e0e;
+  border-left: 4px solid #ff1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card h2 {
+  color: #ff1a1a;
+}
+
+.status {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #000;
+  color: #aaa;
+  font-size: 14px;
+}
